@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            background-color: #0a6daf; /* Blue background color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff; /* White form background color */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 500px;
+            height: 500px;
+            text-align: center;
+        }
+
+        /* Style the form header */
+        .form-header {
+            font-size: xxx-large;
+            margin-bottom: 20px;
+            font-family: system-ui;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Style the form footer */
+        .form-footer {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        /* Style the form elements as needed */
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db; /* Blue submit button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #name_data{
+            color: black;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .form-label {
+            flex: 1;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .form-input {
+            flex: 2;
+        }
+        
+        .form-input input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-header">Customer Survey Form</div>
+
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="form-label">
+                    <label for="email">Email:</label>
+                </div>
+                
+            </div>
+            
+            <div class="form-row">
+                <div class="form-input">
+                    <input type="text" id="name" name="name" required>
+                </div>&nbsp;
+                <div class="form-input">
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">Is this first time You are using our product $ service ?</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="option1" class="form-radio">
+                    <input type="radio" id="option1" name="option" value="Option 1" checked > Yes
+                </label>
+                <label for="option2" class="form-radio" style="margin-right: 385px">
+                    <input type="radio" id="option2" name="option" value="Option 2"> No
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">Would you suggestion  to your friend and colleague ?</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="option3" class="form-radio">
+                    <input type="radio" id="option3" name="option" value="Option " checked > Yes
+                </label>
+                <label for="option4" class="form-radio" style="margin-right: 385px">
+                    <input type="radio" id="option4" name="option" value="Option "> No
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">How satisfied are you  with our company overal ?</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="option5" class="form-radio">
+                    <input type="radio" id="option5" name="option" value="Option " checked > Yes
+                </label>
+                <label for="option6" class="form-radio" style="margin-right: 385px">
+                    <input type="radio" id="option6" name="option" value="Option "> No
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="name">Do you have suggestion to improve our service ?</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <textarea name="" id="" cols="30" rows="6"></textarea>
+            </div>
+            
+            <input type="submit" value="SUBMIT" style="margin-right: 415px">
+        </form>
+    </div>
+    <div class="form-footer">@2023 Customer Survey From.All Rights | Designed By <span id="name_data">BISWAJITA DAS</span></div>
+</body>
+</html>
